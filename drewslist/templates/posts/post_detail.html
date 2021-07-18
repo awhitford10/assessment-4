@@ -9,13 +9,23 @@
     <p>Description: {{post.post_description}}</p>
   
     <br>
-    <br>
-    <a href="{% url 'edit_post' category_id=category.id post_id=post.id%}"> Edit Post</a>
-    <br>
-    <br>
-    <form name="delete_category" method="POST" action="{% url 'delete_post' category_id=category.id post_id=post.id %}">
-      {% csrf_token %}
-      <input type="submit" value="Delete post" />
-    </form>
+    
+  
   </div>
   {% endblock content %}
+
+  {% block extra %}
+   <br>
+    <a href="{% url 'edit_post' category_id=category.id post_id=post.id%}"> Edit Post</a>
+    <br>   
+  <br>
+  <form name="delete_category" method="POST" action="{% url 'delete_post' category_id=category.id post_id=post.id %}">
+    {% csrf_token %}
+    <input type="submit" value="Delete post" />
+  </form>
+
+  <br>
+    <a href="{% url 'post_list' category_id=category.id %}"> Back</a>
+<br>   
+ 
+  {% endblock extra %}
