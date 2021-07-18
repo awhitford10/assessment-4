@@ -1,0 +1,115 @@
+[
+    {
+    "model": "drewslist.Category",
+    "pk": 1,
+    "fields": {
+        "category_name": "For Sale"
+        
+    }
+},
+{
+    "model": "drewslist.Category",
+    "pk": 2,
+    "fields": {
+        "category_name": "Housing"
+        
+    }
+},
+{
+    "model": "drewslist.Category",
+    "pk": 3,
+    "fields": {
+        "category_name": "Jobs"
+        
+    }
+},
+{
+    "model": "drewslist.Category",
+    "pk": 4,
+    "fields": {
+        "category_name": "Discussion Forum"
+        
+    }
+},
+{
+    "model": "drewslist.Post",
+    "pk": 1,
+    "fields": {
+        "post_name": "A Couch",
+        "post_description": "Free if you pick up. There might be some change in the cushions. ",
+        "category": 1                  
+        
+    }
+},
+{
+    "model": "drewslist.Post",
+    "pk": 2,
+    "fields": {
+        "post_name": "A Television",
+        "post_description": "It really old... but not old enough to be antique.",
+        "category": 1        
+        
+    }
+},
+{
+    "model": "drewslist.Post",
+    "pk": 3,
+    "fields": {
+        "post_name": "Mansion",
+        "post_description": "In the middle of nowhere, and its haunted, but rent is basically free.",
+        "category": 2        
+        
+    }
+},
+
+{
+    "model": "drewslist.Post",
+    "pk": 4,
+    "fields": {
+        "post_name": "Apartment",
+        "post_description": "In the heart of a big city. Superb location, but it is a 2 sqft studio and its really expensive.",
+        "category": 2        
+        
+    }
+},
+{
+    "model": "drewslist.Post",
+    "pk": 5,
+    "fields": {
+        "post_name": "Software Engineer",
+        "post_description": "Wow, it seems like all the jobs are tech related, and this one is perfect.",
+        "category": 3        
+        
+    }
+},
+{
+    "model": "drewslist.Post",
+    "pk": 6,
+    "fields": {
+        "post_name": "Fullstack Software Engineer",
+        "post_description": "Looking for Master's of Computer Science with 10 years experience under the age of 3.",
+        "category": 3        
+        
+    }
+},
+{
+    "model": "drewslist.Post",
+    "pk": 7,
+    "fields": {
+        "post_name": "Looking for Friend",
+        "post_description": "My mom says I need real friends.",
+        "category": 4        
+        
+    }
+},
+{
+    "model": "drewslist.Post",
+    "pk": 8,
+    "fields": {
+        "post_name": "Hitch a ride",
+        "post_description": "Trying to find my way to the donut store a mile a way. It's too far to walk.",
+        "category": 4        
+        
+    }
+}
+]

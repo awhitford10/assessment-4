@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block title %} All Posts: {{ category.category_name }}{% endblock title%}
+
+{% block content %}
+<ul>
+  {% for post in posts %}
+    <div>
+      <li><a href="{% url 'post_detail' category_id=category.id post_id=post.id %}">{{ post.post_name }}</a></li>
+    </div>
+  {% endfor %}
+</ul>
+
+{% endblock content %}
+
+{% block extra %} <a href="{% url 'new_post' category_id=category.id %}">Add a new post</a> {% endblock extra %}
+
+
+
